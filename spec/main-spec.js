@@ -71,16 +71,16 @@ describe('WTF Prototype', function () {
   
   it("WTF.prototype must be a function", function() {
      
-     expect(String.prototype.WTF).to.be.a('function'); 
+     expect(String.prototype.wtf).to.be.a('function'); 
       
   });
 
   it("Must return value 'WTF' for any given value ", function() {
        
-    var test_array = "squirl";
-    var result = test_array.WTF();
+    var test_str = "squirl";
+    var result = test_str.wtf();
        
-    expect(test_array).to.be.a('string');
+    expect(test_str).to.be.a('string');
     expect(result).to.equal("WTF");
     });
 
@@ -92,6 +92,17 @@ describe('String Scramble Prototype', function () {
   it("Scramble.prototype must be a function", function() {
      
      expect(String.prototype.scramble).to.be.a('function'); 
+     
+  });
+  
+  it("Must return scrambled string", function() {
+
+    var test_str = "Docter Girlfriend";
+    var result = test_str.scrambled();
+
+    expect(test_str).to.be.a('string');
+    expect(result).to.not.equal(test_str);
+    
      
   });
 
@@ -106,10 +117,11 @@ describe('String Trim Prototype', function () {
   });
 
   it("Must pass in one string argument ", function() {
-    var test_str = " Break Away ";
+    var test_str = " Break Away. ";
+    var result = test_str.trim();
 
     expect(test_str).to.be.a('string');
-    expect(test_str).to.not.be.null();
+    expect(result).to.be.equal("Break Away");
        
   });
 

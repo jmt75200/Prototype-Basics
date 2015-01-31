@@ -1,4 +1,4 @@
-// Array Extensions file for Array 
+// Array Extensions file for Prototype Basics
 
 //toString method
 //must take the contents of an array and create a string
