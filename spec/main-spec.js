@@ -125,6 +125,4 @@ describe('String Trim Prototype', function () {
        
   });
 
-
-
 });//ends the array describe 
